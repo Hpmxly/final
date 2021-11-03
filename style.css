@@ -1,0 +1,332 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Roboto',sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 0;
+  height: 500px;
+}
+
+.header {
+  width: 100%;
+  min-height: 50vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--black2)), to(var(--black1)));
+  background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+}
+
+.navegacion {
+  color: black;
+  height: 70px;
+  background: transparent;
+}
+
+.navegacion__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: inherit;
+  padding: 0;
+}
+
+.logo__nombre {
+  font-size: 28px;
+  font-weight: 200;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.link:hover {
+  color: #d6d4d4;
+}
+
+.contenedor__principal {
+  height: calc(100vh - 70px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.imagen__principal {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 48%;
+  max-height: 90vh;
+  position: relative;
+  left: 50%;
+  top: -290px;
+}
+
+.principal__texto {
+  width: 48%;
+}
+
+.principal__titulo {
+  font-size: 56px;
+  font-weight: 300;
+  max-height: 90vh;
+}
+
+.parrafo__principal {
+  font-size: 26px;
+  margin: 15px 0;
+  color: black;
+}
+
+.boton__principal {
+  padding: 15px 15px;
+  color: white;
+  background-color: #f64f64;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.boton__principal:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.contenido__secundario {
+  height: calc(80vh - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.imagen__secundaria {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 46%;
+  max-height: 40vh;
+  position: relative;
+  left: -50px;
+}
+
+.secundario__texto {
+  width: 60%;
+}
+
+.secundario__titulo {
+  font-size: 43px;
+  font-weight: 300;
+  max-height: 90vh;
+}
+
+.parrafo__secundario {
+  margin: 10px 15px;
+  font-size: 18px;
+  color: black;
+}
+
+.boton__secundario {
+  padding: 15px 30px;
+  color: white;
+  background-color: #f64f64;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 12px;
+}
+
+.boton__secundario:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.titulo__cards {
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  width: 40%;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+
+.tarjetasInfo {
+  width: 100%;
+  max-width: 1200px;
+  height: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
+  padding: 4px;
+}
+
+.tarjetasInfo .card {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  padding: 8px;
+}
+
+.tarjetasInfo .card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+}
+
+.tarjetasInfo .card img {
+  width: 330px;
+  height: 220px;
+}
+
+.tarjetasInfo .card h4 {
+  font-weight: 600;
+  margin: 19px;
+}
+
+.tarjetasInfo .card p {
+  padding: 0 1rem;
+  font-size: 25px;
+  font-weight: bold;
+  color: gray;
+}
+
+.tarjetasInfo .card .compra {
+  width: 40%;
+  margin: 0px auto;
+  padding: 10px 10px;
+  color: white;
+  background-color: #f64f64;
+  font-weight: bold;
+}
+
+.tarjetasInfo .card .compra:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.titulo__footer {
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  width: 40%;
+  margin: 0px auto;
+}
+
+.footer {
+  width: 90%;
+  height: 350px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 200px;
+}
+
+.footer-formulario {
+  width: 350px;
+  height: 340px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 2px black;
+          box-shadow: 0 0 2px black;
+  border-radius: 8px;
+}
+
+.footer-formulario h4 {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+  padding: 12px;
+}
+
+.footer-formulario form label {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 7px;
+}
+
+.footer-formulario input {
+  width: 80%;
+  height: 40px;
+  display: block;
+  border-radius: 4px;
+  margin: 0px auto;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.footer-formulario input {
+  text-align: center;
+}
+
+.footer-social {
+  width: 30%;
+  height: 340px;
+}
+
+.footer-social h4 {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.footer-social .icons {
+  font-size: 28px;
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
